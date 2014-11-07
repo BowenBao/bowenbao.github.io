@@ -34,12 +34,22 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .pp {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;    
+    hyphens: auto;
 }
 
 @media(min-width:767px) {
@@ -47,11 +57,21 @@ p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
     .pp {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;        
     }
 }
 
@@ -266,8 +286,6 @@ a:focus {
 
 .bio-pic {
     background-color: #fff;
-    height: 300px;
-    width: 400px;
 }
 
 .padding-section {
@@ -312,6 +330,8 @@ a:focus {
 }
 
 @media(min-width:767px) {
+    .bio-pic{
+    }
     .content-section {
         padding-top: 100px;
     }
