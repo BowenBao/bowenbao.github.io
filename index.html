@@ -17,12 +17,15 @@
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
-    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/timeline.style.css" rel="stylesheet">
+
+    <link href="css/project.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,9 +66,6 @@
                     <li>
                         <a class="page-scroll" href="#projects">Projects</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -81,7 +81,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <p class="intro-text">Software Engineering. East China Normal University. </p>
                         <h6 class="brand-heading">Bowen Bao</h6>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#bio" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -91,59 +91,155 @@
     </header>
 
     <!-- About Section -->
-    <section id="bio" class="container content-section text-center">
+    <section id="bio" class="container bio-section content-section">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About me</h2>
-                <!-- <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p> -->
-                <!-- <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>-->
-                <!-- <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p> -->
+            <div class="col-xs-10 col-xs-offset-1">
+                <h1 class="text-center">About me</h1>
+		<a class="col-sm-4 bio-pic thumbnail text-center">
+		  <img src="img/wordcloud400.png">
+		</a>
+		<div class="col-sm-6">
+		  <p>
+		    I'm a passionate
+		  </p>
+		</div>
             </div>
         </div>
     </section>
 
     <section id="experience" class="timeline-section content-section text-center">
-      <div class="container">
-        <div class="page-header text-center">
-          <h1 id="timeline">Experience</h1>
-        </div>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="2013.06" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-body">
-                <p>Project description</p>
-              </div>
-              <div class="timeline-footer">
-                <a class="page-scroll" href="#projects">project link</a>
-              </div>
-            </div>
-          </li>
-          
-          <li  class="timeline-inverted">
-            <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="2013.07" id=""></i></a></div>
-            <div class="timeline-panel">
-              <div class="timeline-body">
-                <p>description</p>
-                
-              </div>
-              
-              <div class="timeline-footer">
-                <a class="page-scroll" href="#projects">project link</a>
-              </div>
-            </div>
-          </li>
-          <li class="clearfix" style="float: none;"></li>
-        </ul>
-      </div>
-    </section>
+    <div class="container">
+<h1>Experience</h1>
+  <div id="timeline">
+    <div class="timelineitem">
+      <div class="tdate">2014</div>
+      <div class="ttitle">Columbia University Visiting Student</div>
+      <div class="tdesc">Machine Learning, Natural Language Processing and Large-Scale Distributed Optimization.</div>
+    </div>
+    <div class="timelineitem">
+      <div class="tdate">2011-2015(expected)</div>
+      <div class="ttitle">East China Normal Universy Bachelor's Degree</div>
+      <div class="tdesc">Software Engineering.</div>
+    </div>
+  </div>
+</div>
+</section>
     
     <!-- Project Section -->
-    <section id="projects" class="padding-section text-center">
+    <section id="projects" class="padding-section ">
         <div class="project-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Projects</h2>
+                <div class="container">
+                  <div id="main_area">
+                    <!-- Slider -->
+                    <div class="row">
+                      <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                          <div class="col-sm-8" id="carousel-bounding-box">
+                            <div class="carousel slide" id="myCarousel">
+                              <!-- Carousel items -->
+                              <div class="carousel-inner">
+                                <div class="active item" data-slide-number="0">
+                                  <img src="img/tour750.png"></div>
+
+                                  <div class="item" data-slide-number="1">
+                                    <img src="img/arcade750.jpg"></div>
+
+                                    <div class="item" data-slide-number="2">
+                                      <img src="img/smc750.png"></div>
+
+                                      <div class="item" data-slide-number="3">
+                                        <img src="img/gmap750.png"></div>
+
+                                        <div class="item" data-slide-number="4" height="350">
+                                          <img src="img/alumni750.png"></div>
+
+                                          <div class="item" data-slide-number="5">
+                                            <img src="img/arcade1750.png"></div>
+                              </div><!-- Carousel nav -->
+                              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                              </a>
+                              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                              </a>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-4" id="carousel-text"></div>
+
+                          <div id="slide-content" style="display: none;">
+                            <div id="slide-content-0">
+                              <h3>Distributed Contextual Bandits</h3>
+                              <p class="sub-text">We extended the distributed online algorithm framework using mini-batch to the contextual bandit setting. We prove that the regret bound of our algorithm is $\sqrt T$.</p>
+                              <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                            </div>
+
+                            <div id="slide-content-1">
+                              <h3>EnChinese</h3>
+                              <p class="sub-text">This project generates texts from ordinary Chinese into a unique style popular on the internet. I approached the word level English to Chinese by training word2vec on the combined corpus of English and Chinese wiki. </p>
+                              <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                            </div>
+
+                            <div id="slide-content-2">
+                              <h3>Statistical Model Checking</h3>
+                              <p class="sub-text">We addressed this problem by implementing a Monte-Carlo Method which deploies simulations in Modelica with randomness extension, and applying hypothesis testing on the simulated samples.</p>
+                              <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                            </div>
+
+                            <div id="slide-content-3">
+                              <h3>Personalized Touring Customization System</h3>
+                              <p class="sub-text">We built a large-scale recommender system which provides a travel sequence of tourist spots, based on personal interests mined from user rating dataset and the descriptions of tourist spots.</p>
+                              <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                            </div>
+
+                            <div id="slide-content-4">
+                              <h3>ECNU Alumni Website</h3>
+                              <p class="sub-text">This website enables people to </p>
+                              <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                            </div>
+
+                            <div id="slide-content-5">
+                              <h3>Crazy Arcade++</h3>
+                              <p class="sub-text">This is a crazy arcade game built from scratch based on .NET. It provides single player mode and online multi-player mode. </p>
+                              <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--/Slider-->
+
+                    <div class="row hidden-xs" id="slider-thumbs">
+                      <!-- Bottom switcher of slider -->
+                      <ul class="hide-bullets">
+                        <li class="col-sm-2">
+                          <a class="thumbnail" id="carousel-selector-0"><img src="img/gmap750.png">project 1</a>
+                        </li>
+
+                        <li class="col-sm-2">
+                          <a class="thumbnail" id="carousel-selector-1"><img src="img/alumni750.png">project 2</a>
+                        </li>
+
+                        <li class="col-sm-2">
+                          <a class="thumbnail" id="carousel-selector-2"><img src="img/smc750.png">SMC</a>
+                        </li>
+
+                        <li class="col-sm-2">
+                          <a class="thumbnail" id="carousel-selector-3"><img src="img/tour750.png">Personalized Touring</a>
+                        </li>
+
+                        <li class="col-sm-2">
+                          <a class="thumbnail" id="carousel-selector-4"><img src="img/alumni750.png">ECNU Alumni Website</a>
+                        </li>
+
+                        <li class="col-sm-2">
+                          <a class="thumbnail" id="carousel-selector-5"><img src="img/arcade750.jpg">Crazy Arcade</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
                 </div>
             </div>
         </div>
@@ -151,10 +247,10 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Bowen Bao's Home Page 2014</p>
-            <a>bowencharlesbao@gmail.com</a>
-        </div>
+      <div class="container text-center">
+        <p>Copyright &copy; Bowen Bao's Home Page 2014</p>
+        <a>bowenbao _at_ mydeepbelief.net</a>
+      </div>
     </footer>
 
     <!-- jQuery Version 1.11.0 -->
@@ -171,6 +267,13 @@
 
     <script src="js/timeline.js"></script>
 
+    <script src="js/project.js"></script>
+
+    <script>
+     $('#myCarousel').carousel({
+       interval: 60000
+     })
+    </script>
 </body>
 
 </html>
