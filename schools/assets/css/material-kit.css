@@ -3739,4 +3739,8 @@ h2.title {
   }
 }
 
+.navbar, .navbar.navbar-default {
+    background-color: #00aced;
+    color: #ffffff;
+}
 /*# sourceMappingURL=material-kit.css.map */
