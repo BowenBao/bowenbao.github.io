@@ -589,6 +589,230 @@
 
                         </div>
 
+                        <div class="title">
+                            <h3>Master of Professional Accounting</h3>
+                        </div>
+                        <!-- Tabs with icons on Card -->
+                        <div class="card card-nav-tabs">
+                            <div class="header header-success">
+                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                                <div class="nav-tabs-navigation">
+                                    <div class="nav-tabs-wrapper">
+                                        <ul class="nav nav-tabs" data-tabs="tabs" id="card_tabs2">
+                                            <li id="profile_tab2" class="active">
+                                                <a href="#profile2" data-toggle="tab">
+                                                    <i class="material-icons">business</i>
+                                                    项目名称
+                                                </a>
+                                            </li>
+                                            <li id="links_tab2">
+                                                <a href="#links2" data-toggle="tab">
+                                                    <i class="material-icons">cloud</i>
+                                                    链接地址
+                                                </a>
+                                            </li>
+                                            <li id="toefl_tab2">
+                                                <a href="#toefl2" data-toggle="tab">
+                                                    <i class="material-icons">translate</i>
+                                                    TOEFL要求
+                                                </a>
+
+                                            </li>
+                                            <li id="gre_tab2">
+                                                <a href="#gre2" data-toggle="tab">
+                                                    <i class="material-icons">assignment</i>
+                                                    GRE要求
+                                                </a>
+
+                                            </li>
+                                            <li id="recommend_tab2">
+                                                <a href="#recommend2" data-toggle="tab">
+                                                    <i class="material-icons">description</i>
+                                                    推荐信要求
+                                                </a>
+
+                                            </li>
+                                            <li id="bachelar_tab2">
+                                                <a href="#bachelar2" data-toggle="tab">
+                                                    <i class="material-icons">book</i>
+                                                    本科学位要求
+                                                </a>
+
+                                            </li>
+                                            <li id="gpa_tab2">
+                                                <a href="#gpa2" data-toggle="tab">
+                                                    <i class="material-icons">assessment</i>
+                                                    GPA要求
+                                                </a>
+
+                                            </li>
+                                            <li id="due_tab2">
+                                                <a href="#due2" data-toggle="tab">
+                                                    <i class="material-icons">schedule</i>
+                                                    截止日期
+                                                </a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="tab-content text-center">
+                                    <div class="tab-pane active" id="profile2">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>信息</th>
+                                                    <th>简介</th>
+                                                    <th class="text-center">详细信息</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-left">项目名称</td>
+                                                    <td class="text-left">MPAcc</td>
+                                                    <td class="td_actions">
+                                                        <a href="#profile2" data-toggle="modal" data-target="#myModal2">
+                                                            <i class="material-icons">business</i>
+                                                            项目信息
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">TOEFL要求</td>
+                                                    <td class="text-left">100</td>
+                                                    <td class="td_actions">
+                                                        <a href="#toefl2" data-toggle="tab" onclick="
+                                                                                                        $('#card_tabs2  li').removeClass('active');
+                                                                                                        var maptab = document.getElementById('toefl_tab2');
+                                                                                                        maptab.className = maptab.className + ' active';
+                                                                                                        ">
+                                                            <i class="material-icons">translate</i>
+                                                            TOEFL要求
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">GRE要求</td>
+                                                    <td class="text-left">GMAT: Average is 600.</td>
+                                                    <td class="td_actions">
+                                                        <a href="#gre2" data-toggle="tab" onclick="
+                                                                                                      $('#card_tabs2  li').removeClass('active');
+                                                                                                      var maptab = document.getElementById('gre_tab2');
+                                                                                                      maptab.className = maptab.className + ' active';
+                                                                                                      ">
+                                                            <i class="material-icons">assignment</i>
+                                                            GRE要求
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">推荐信要求</td>
+                                                    <td class="text-left">3封</td>
+                                                    <td class="td_actions">
+                                                        <a href="#recommend2" data-toggle="tab" onclick="
+                                                                                                            $('#card_tabs2  li').removeClass('active');
+                                                                                                            var maptab = document.getElementById('recommend_tab2');
+                                                                                                            maptab.className = maptab.className + ' active';
+                                                                                                            ">
+                                                            <i class="material-icons">description</i>
+                                                            推荐信息
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">本科学位要求</td>
+                                                    <td class="text-left">full admit with prerequisite course work</td>
+                                                    <td class="td_actions">
+                                                        <a href="#bachelar2" data-toggle="tab" onclick="
+                                                                                                           $('#card_tabs2  li').removeClass('active');
+                                                                                                           var maptab = document.getElementById('bachelar_tab2');
+                                                                                                           maptab.className = maptab.className + ' active';
+                                                                                                           ">
+                                                            <i class="material-icons">book</i>
+                                                            本科学位
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">GPA要求</td>
+                                                    <td class="text-left">In English</td>
+                                                    <td class="td_actions">
+                                                        <a href="#gpa2" data-toggle="tab" onclick="
+                                                                                                      $('#card_tabs2  li').removeClass('active');
+                                                                                                      var maptab = document.getElementById('gpa_tab2');
+                                                                                                      maptab.className = maptab.className + ' active';
+                                                                                                      ">
+                                                            <i class="material-icons">assessment</i>
+                                                            GPA要求
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">截止日期</td>
+                                                    <td class="text-left">
+                                                         January 15.
+                                                    </td>
+                                                    <td class="td_actions">
+                                                        <a href="#due2" data-toggle="tab" onclick="
+                                              $('#card_tabs2  li').removeClass('active');
+                                              var maptab = document.getElementById('due_tab2');
+                                              maptab.className = maptab.className + ' active';
+                                              ">
+                                                            <i class="material-icons">schedule</i>
+                                                            截止日期
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane" id="links2">
+                                        <button class="btn btn-simple btn-info" onclick="location.href='http://foster.uw.edu/academics/degree-programs/master-of-professional-accounting/admissions/';">Admission link</button>
+                                    </div>
+                                    <div class="tab-pane" id="toefl2">
+                                        <div class="panel-body text-left">
+The demands of the MPAcc Program require that all students have a thorough understanding of the English language. The <a title="TOEFL" href="https://www.ets.org/toefl" target="_blank">Test of English as a Foreign Language (TOEFL)</a> is mandatory for all permanent residents, immigrants and international applicants. The TOEFL is not required for international students who graduate with a bachelor&#8217;s or master&#8217;s degree from an accredited English-speaking institution where all classes are taught in English. If you will graduate from a U.S. school, you do not need to submit English scores.</p>
+<p>The TOEFL score is evaluated along with the verbal portion of the GMAT to determine how well a candidate is prepared to actively participate in classes conducted in English. We require a minimum iBT of 100 or 7 on the IELTS. TOEFL scores are useful for two years, and the <strong><em>scores must be sent directly</em></strong> to the University of Washington from the testing center.</p>
+<p>Do not ask the MPAcc Office to download or verify your scores. You must have the scores sent electronically to our school from the testing center and the scores will be loaded into the UW admissions system. You should see your scores on the Application Status page when we have received your official scores. Our school code is 4854. For more information, or to request that your scores be sent to us, please contact TOEFL/TSE Services, P.O. Box 6151, Princeton, NJ 08541-6151, or call 609-951-1100.</p>
+<p><strong>NOTE</strong>: We are phasing out usage of IELTS. IELTS with a test session date after November 1, 2016 will not be accepted.</p>                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="gre2">
+                                        <div class="panel-body text-left">
+                                            Each applicant must take the <a title="GMAT " href="http://www.mba.com/us/the-gmat-exam.aspx" target="_blank">Graduate Management Admissions Test (GMAT)</a>. We do not accept the GRE. We advise applicants to take the examination early. You should submit your complete application even though you may have a later test date. If you have a test score, please submit a photocopy of the test score you receive at the test center. There is a five-year limit on GMAT scores. When you take the test, inform the Educational Testing Service (ETS) that it must forward your scores to the University of Washington. The Foster School&#8217;s code number is 459-75-41. We will hold your scores on file for one year.
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="recommend2">
+                                        <div class="panel-body text-left">
+List three people who are able to provide detailed information about your academic performance, employment responsibilities and accomplishments, activities, personality or character. We will only contact your references if we need additional information. We do not use an online form for references to submit their comments.                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="bachelar2">
+                                        <div class="panel-body text-left">
+                                            <ul>
+<li><strong>Past academic performance</strong>. We review each prospective student’s undergraduate academic bachelor degree work, taking note of the difficulty of the curriculum and the scholastic quality of the school attended. We also consider the applicant’s post baccalaureate academic experience. Your bachelor degree must be completed by the September of the year in which you wish to start the MPAcc Program.  Grades are considered at the time of application.  When you report your last two years of grades on your application, this is a university requirement and does not have to be exact.  New grades will only be considered for satisfying class and degree requirements but will not be added to the application GPA.  Grades from more than one school must be submitted as separate transcripts.  We do not review transfer credits that have been reported on a different school’s transcript.</li>
+</ul>
+<ul>
+<li>Satisfactory completion of <a href="/academics/degree-programs/master-of-professional-accounting/admissions/prerequisites/">prerequisite accounting major classes</a> before the September in which you wish to start the program. We must see grades from at least three intermediate level accounting courses in order to make an admissions decision.</li>
+</ul>
+                                            The resume you include should be similar to what you use for job applications, including schools attended, work experience, internships (both past and future assignments), community and volunteer work, and skills. If you have an internship for the coming summer, be sure to include it on your resume even though you have not yet worked.
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="gpa2">
+                                        <div class="panel-body text-left">
+                                            Include one transcript from each post-secondary school (after high school) you have attended. These transcripts must be uploaded into your online application. We do not need transcripts if you only attended a school for three or less classes or if you attended a study abroad program, if the credits are on your degree school transcript. We ask that overseas school transcripts be in English because we do not use evaluation services, like WES. If you attended the University of Washington, you must still upload your UW transcript. If you transferred credits to the UW, you also need to submit a copy from each of those schools. Official transcripts will not be needed until after an admissions decision has been made and/or after your bachelor degree has been earned.
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="due2">
+                                         January 15
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Tabs with icons on Card End -->
+
 
                     </div>
                     <!-- End Section Tabs -->
@@ -693,7 +917,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">MS CS</h4>
+                    <h4 class="modal-title" id="myModalLabel">MS-CFRM</h4>
                 </div>
                 <div class="modal-body">
                     The Master of Science in Computational Finance and Risk Management.
@@ -721,7 +945,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel1">MS CS</h4>
+                    <h4 class="modal-title" id="myModalLabel1">MSIM</h4>
                 </div>
                 <div class="modal-body">
                     <h2>Application Requirements<br />
@@ -772,6 +996,27 @@
     </div>
     <!--  End Modal -->
 
+        <!-- Sart Modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel2">MPAcc</h4>
+                </div>
+                <div class="modal-body">
+                    <p><em>Please note that our website is currently being updated. All applications for 2016-2017 must be submitted through the UW online application (see the &#8220;Apply Now&#8221; button at the bottom of this page). No application materials are to be submitted by postal mail or email.</em></p>
+<p>Admission to the University of Washington Foster School of Business Master of Professional Accounting (MPAcc) Program is for fall quarter only. Every fall, the Foster School registers approximately 50 new students in each of the two tracks—Auditing &amp; Assurance and Taxation. We offer admission to those who we believe have the highest potential for achievement in the accounting profession.</p>
+<p>We select prospective students on the basis of their academic achievements, their ability to communicate effectively and their record of personal accomplishments. Prospective students must have well-developed language and reasoning skills. During our evaluation process, we consider evidence of applicants’ skill levels in reading, writing, speaking English, and the ability to reason analytically, logically and creatively.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End Modal -->
 </body>
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
