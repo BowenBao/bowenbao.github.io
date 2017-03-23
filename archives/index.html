@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="https://bowenbao.github.io/archives/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
@@ -38,7 +38,7 @@
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
         
-          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+          <a id="nav-github" class="nav-icon" href="https://github.com/bowenbao"></a>
         
       </div>
     </nav>
@@ -67,7 +67,6 @@
       
         <a class="main-nav-link" href="/about">About</a>
       
-      <a class="main-nav-link st-search-show-outputs">Search</a>
     </nav>
   </div>
 </header>
@@ -176,13 +175,9 @@
 </footer>
   </div>
   <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/about" class="mobile-nav-link">About</a>
-  
+  <% for (var i in theme.menu){ %>
+    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+  <% } %>
   <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
 </nav>
   

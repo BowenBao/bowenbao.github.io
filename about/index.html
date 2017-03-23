@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta property="og:url" content="https://bowenbao.github.io/about/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:updated_time" content="2017-03-22T19:34:36.458Z">
 <meta name="twitter:card" content="summary">
@@ -40,7 +40,7 @@
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
         
-          <a id="nav-github" class="nav-icon" href="https://github.com/myname"></a>
+          <a id="nav-github" class="nav-icon" href="https://github.com/bowenbao"></a>
         
       </div>
     </nav>
@@ -69,7 +69,6 @@
       
         <a class="main-nav-link" href="/about">About</a>
       
-      <a class="main-nav-link st-search-show-outputs">Search</a>
     </nav>
   </div>
 </header>
@@ -106,7 +105,7 @@
     <footer class="article-footer">
       <div class="article-footer-content">
         
-        <a data-url="http://yoursite.com/about/index.html" data-id="cj0ldinib00018pv4splmadv3" class="article-share-link">Share</a>
+        <a data-url="https://bowenbao.github.io/about/index.html" data-id="cj0ldinib00018pv4splmadv3" class="article-share-link">Share</a>
         
       </div>
     </footer>
@@ -169,13 +168,9 @@
 </footer>
   </div>
   <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/about" class="mobile-nav-link">About</a>
-  
+  <% for (var i in theme.menu){ %>
+    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+  <% } %>
   <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
 </nav>
   
