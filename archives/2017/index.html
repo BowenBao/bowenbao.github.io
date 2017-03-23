@@ -131,7 +131,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
+    <h3 class="widget-title">近期文章</h3>
     <div class="widget">
       <ul>
         
@@ -152,7 +152,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">2</span></li></ul>
     </div>
@@ -175,16 +175,39 @@
 </footer>
   </div>
   <nav id="mobile-nav">
-  <% for (var i in theme.menu){ %>
-    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
-  <% } %>
-  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
 </nav>
   
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    menuSettings: {
+      zoom: "None"
+    },
+    showMathMenu: false,
+    jax: ["input/TeX","output/CommonHTML"],
+    extensions: ["tex2jax.js"],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js"],
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+  });
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script>
+
+
 
 <!-- totop start -->
 <div id="totop">
-	<a title="To Top"></a>
+	<a title="返回顶部"></a>
 </div>
 <!-- totop end -->
 

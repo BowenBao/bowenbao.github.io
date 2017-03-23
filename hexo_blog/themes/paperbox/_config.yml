@@ -11,7 +11,7 @@ blog_title: My Blog
 # Content
 excerpt_link: Read More
 fancybox: true
-mathjax: false
+mathjax: true
 
 # Sidebar
 sidebar: right
