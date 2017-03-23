@@ -168,13 +168,10 @@
 </footer>
   </div>
   <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/about" class="mobile-nav-link">About</a>
-  
+  <% for (var i in theme.menu){ %>
+    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+  <% } %>
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
 </nav>
   
 <script type="text/x-mathjax-config">

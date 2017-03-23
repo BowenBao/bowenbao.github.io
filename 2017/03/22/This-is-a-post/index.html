@@ -7,18 +7,18 @@
   
   <title>This is a post | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LatexTesting inline equations (a+b=c).
+  <meta name="description" content="LatexTesting inline equations \(a+b=c\).
 Testing equations$$\sum_i (a_i+b_i) = c$$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="This is a post">
 <meta property="og:url" content="https://bowenbao.github.io/2017/03/22/This-is-a-post/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="LatexTesting inline equations (a+b=c).
+<meta property="og:description" content="LatexTesting inline equations \(a+b=c\).
 Testing equations$$\sum_i (a_i+b_i) = c$$">
-<meta property="og:updated_time" content="2017-03-23T01:52:00.897Z">
+<meta property="og:updated_time" content="2017-03-23T16:57:39.355Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="This is a post">
-<meta name="twitter:description" content="LatexTesting inline equations (a+b=c).
+<meta name="twitter:description" content="LatexTesting inline equations \(a+b=c\).
 Testing equations$$\sum_i (a_i+b_i) = c$$">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -104,7 +104,7 @@ Testing equations$$\sum_i (a_i+b_i) = c$$">
     <div class="article-entry" itemprop="articleBody">
       
         
-        <h1 id="Latex"><a href="#Latex" class="headerlink" title="Latex"></a>Latex</h1><p>Testing inline equations (a+b=c).</p>
+        <h1 id="Latex"><a href="#Latex" class="headerlink" title="Latex"></a>Latex</h1><p>Testing inline equations \(a+b=c\).</p>
 <p>Testing equations<br>$$\sum_i (a_i+b_i) = c$$</p>
 <a id="more"></a>
       
@@ -189,13 +189,10 @@ Testing equations$$\sum_i (a_i+b_i) = c$$">
 </footer>
   </div>
   <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/about" class="mobile-nav-link">About</a>
-  
+  <% for (var i in theme.menu){ %>
+    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+  <% } %>
+  <a href="#search" class="mobile-nav-link st-search-show-outputs">Search</a>
 </nav>
   
 <script type="text/x-mathjax-config">

@@ -6,7 +6,7 @@ tags:
 
 # Latex
 
-Testing inline equations \(a+b=c\).
+Testing inline equations \\(a+b=c\\).
 
 Testing equations
 $$\sum\_i (a\_i+b\_i) = c$$
